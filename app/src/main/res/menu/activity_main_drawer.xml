@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dut"
+            android:icon="@drawable/ic_dut_menu"
+            android:title="@string/menu_dut" />
+        <item
+            android:id="@+id/nav_materials"
+            android:icon="@drawable/ic_materials_menu"
+            android:title="@string/menu_material" />
+        <item
+            android:id="@+id/nav_video"
+            android:icon="@drawable/ic_video_menu"
+            android:title="@string/menu_video" />
+        <item
+            android:id="@+id/nav_faq"
+            android:icon="@drawable/ic_faq_menu"
+            android:title="@string/menu_faq" />
+    </group>
+    <item android:title="@string/menu_different">
+        <menu>
+            <item
+                android:id="@+id/id_contacts"
+                android:icon="@drawable/ic_contacts_menu"
+                android:title="@string/menu_contacts" />
+            <item
+                android:id="@+id/id_about"
+                android:icon="@drawable/ic_about_menu"
+                android:title="@string/menu_about" />
+        </menu>
+    </item>
+</menu>

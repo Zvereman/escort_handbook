@@ -1,0 +1,2 @@
+rootProject.name='Escort_Handbook'
+include ':app'

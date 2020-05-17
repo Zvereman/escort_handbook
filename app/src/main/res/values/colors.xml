@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1F2222</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="milky_main">#FEF7F1</color>
+    <color name="dark_main">#1F2222</color>
+    <color name="main_red">#e80000</color>
+    <color name="test">#00FFFFFF</color>
+    <color name="tv_name">#66FFFFFF</color>
+    <color name="simple_black">#000000</color>
+</resources>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutUsActivity">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_about_anton"
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/img_aboutus_anton" />
+
+            <TextView
+                android:id="@+id/tv_about_anton"
+                style="@style/TextViewPrimary"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="@string/about_us_anton_txt"
+                android:textIsSelectable="true" />
+
+            <ImageView
+                android:id="@+id/iv_about_sanych"
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                app:srcCompat="@drawable/img_aboutus_sanych" />
+
+            <TextView
+                android:id="@+id/tv_about_sanych"
+                style="@style/TextViewPrimary"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="@string/about_us_sanych_txt"
+                android:textIsSelectable="true" />
+
+            <ImageView
+                android:id="@+id/iv_about_rinat"
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                app:srcCompat="@drawable/img_aboutus_rinta" />
+
+            <TextView
+                android:id="@+id/tv_about_rinat"
+                style="@style/TextViewPrimary"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="@string/about_us_rinat_txt"
+                android:textIsSelectable="true" />
+
+            <ImageView
+                android:id="@+id/iv_about_timur"
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                app:srcCompat="@drawable/img_aboutus_timur" />
+
+            <TextView
+                android:id="@+id/tv_about_timur"
+                style="@style/TextViewPrimary"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="@string/about_us_timur_txt"
+                android:textIsSelectable="true" />
+
+            <TextView
+                android:id="@+id/tv_about_growth"
+                style="@style/TextViewPrimary"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="@string/about_us_growth"
+                android:textIsSelectable="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/dark_main"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ivTvFooterLeft"
+                    android:layout_width="189dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/backgrnd_img_dark_left" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="333dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@color/dark_main" />
+
+                <ImageView
+                    android:id="@+id/ivTvFooterRight"
+                    android:layout_width="189dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/backgrnd_img_dark_right" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

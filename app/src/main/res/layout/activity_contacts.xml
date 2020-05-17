@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logo_backgrnd"
+    tools:context=".Contacts">
+
+
+    <ImageView
+        android:id="@+id/iv_contacts_map"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:clickable="true"
+        android:contextClickable="true"
+        android:focusable="true"
+        android:onClick="btnMap"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_contacts_map"
+        tools:targetApi="m" />
+
+    <ImageView
+        android:id="@+id/img_btn_call_sng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:contextClickable="true"
+        android:focusable="true"
+        android:onClick="btnCallSng"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.964"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_calls_sng"
+        app:srcCompat="@drawable/ic_contacts_call"
+        tools:targetApi="m" />
+
+    <TextView
+        android:id="@+id/tv_contacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/contacts_address"
+        android:textColor="@color/design_default_color_surface"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_contacts_map" />
+
+    <ImageView
+        android:id="@+id/img_btn_call_rus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:contextClickable="true"
+        android:focusable="true"
+        android:onClick="btnCallRus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.026"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_calls_rus"
+        app:srcCompat="@drawable/ic_contacts_call"
+        tools:targetApi="m" />
+
+    <ImageView
+        android:id="@+id/img_btn_youtube_ch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:contextClickable="true"
+        android:focusable="true"
+        android:onClick="btnYotube"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.331"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_contacts"
+        app:srcCompat="@drawable/ic_contacts_youtube"
+        tools:targetApi="m" />
+
+    <ImageView
+        android:id="@+id/img_btn_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:contextClickable="true"
+        android:focusable="true"
+        android:onClick="btnLocation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.652"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_contacts"
+        app:srcCompat="@drawable/ic_contacts_location"
+        tools:targetApi="m" />
+
+    <ImageView
+        android:id="@+id/img_btn_skype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:contextClickable="true"
+        android:focusable="true"
+        android:onClick="btnSkype"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.238"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_btn_whatsapp"
+        app:srcCompat="@drawable/ic_contacts_skype"
+        tools:targetApi="m" />
+
+    <ImageView
+        android:id="@+id/img_btn_mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:contextClickable="true"
+        android:focusable="true"
+        android:onClick="btnEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.752"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_btn_viber"
+        app:srcCompat="@drawable/ic_contacts_mail"
+        tools:targetApi="m" />
+
+    <ImageView
+        android:id="@+id/img_btn_telegram"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:clickable="true"
+        android:contextClickable="true"
+        android:focusable="true"
+        android:onClick="btnTelegram"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_techsupport"
+        app:srcCompat="@drawable/ic_contacts_telegram"
+        tools:targetApi="m" />
+
+    <ImageView
+        android:id="@+id/img_btn_viber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:contextClickable="true"
+        android:focusable="true"
+        android:onClick="btnViber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.637"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_techsupport"
+        app:srcCompat="@drawable/ic_contacts_viber"
+        tools:targetApi="m" />
+
+    <TextView
+        android:id="@+id/tv_techsupport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/contacts_tech_support"
+        android:textColor="@color/design_default_color_surface"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_btn_location" />
+
+    <ImageView
+        android:id="@+id/img_btn_whatsapp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:contextClickable="true"
+        android:focusable="true"
+        android:onClick="btnWhatsapp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.386"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_techsupport"
+        app:srcCompat="@drawable/ic_contacts_whatsapp"
+        tools:targetApi="m" />
+
+    <TextView
+        android:id="@+id/tv_calls_rus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/contacts_rus_calls"
+        android:textColor="@color/design_default_color_surface"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_btn_skype" />
+
+    <TextView
+        android:id="@+id/tv_calls_sng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/contacts_sng_calls"
+        android:textColor="@color/design_default_color_surface"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.919"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_btn_mail" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
