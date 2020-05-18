@@ -63,7 +63,13 @@ public class Text_Content_Activity extends AppCompatActivity {
                 // Для пункта Видеоинструкции создано отдельное активити
                 break;
             case 3:
+                if (position == 21)
+                text_content.setText(R.string.faq_content_txt);
+                else if (position == 23)
+                text_content.setText(R.string.faq_content2_txt);
+                else
                 text_content.setText(getResources().getStringArray(R.array.faq_array_content)[position]);
+
                 iContent.setImageResource(array_image_faq[0]);
                 actionBar.setTitle(getResources().getStringArray(R.array.faq_array)[position]);
                 break;

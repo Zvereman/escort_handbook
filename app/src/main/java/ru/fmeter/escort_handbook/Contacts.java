@@ -114,7 +114,7 @@ public class Contacts extends AppCompatActivity {
     public void btnMap(View view) {
         imgMap.startAnimation(animScale);
 
-        Intent i = new Intent(Contacts.this, ShowMap.class);
+        Intent i = new Intent(Contacts.this, MapActivity.class);
         startActivity(i);
     }
 }
