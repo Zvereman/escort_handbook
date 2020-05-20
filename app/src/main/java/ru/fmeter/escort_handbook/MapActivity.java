@@ -31,5 +31,7 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback 
         LatLng escort = new LatLng(55.8490373, 49.0934571);
         mMap.addMarker(new MarkerOptions().position(escort).title("Escort monitoring"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(escort));
+        mMap.setMinZoomPreference(10.0f);
+        mMap.setMaxZoomPreference(20.0f);
     }
 }
