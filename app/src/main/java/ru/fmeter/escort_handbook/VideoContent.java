@@ -10,6 +10,7 @@ import com.google.android.youtube.player.YouTubePlayer;
 import com.google.android.youtube.player.YouTubePlayerView;
 
 public class VideoContent extends YouTubeBaseActivity {
+    YouTubePlayer youTubePlayer;
     YouTubePlayerView youTubePlayerView;
     YouTubePlayer.OnInitializedListener onInitializedListener;
     private int position = 0;
@@ -22,6 +23,7 @@ public class VideoContent extends YouTubeBaseActivity {
         Foo();
         youTubePlayerView = findViewById(R.id.youtube_view);
         youTubePlayerView.initialize("AIzaSyDd1MV1nXhhQlwjLS-xaB-KlNMWLo9pvn8", onInitializedListener);
+
     }
 
     private void Foo(){

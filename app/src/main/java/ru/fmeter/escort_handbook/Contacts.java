@@ -7,9 +7,12 @@ import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+
+import java.io.IOException;
 
 public class Contacts extends AppCompatActivity {
     private ActionBar actionBar;
@@ -36,47 +39,68 @@ public class Contacts extends AppCompatActivity {
         animRotate = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.rotate_anim);
         animMoove = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.moove_anim);
         animAlpha = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.btn_alpha_anim);
-
     }
 
     public void btnTelegram(View view) {
         imgTelegram.startAnimation(animScale);
-
-        Intent browserIntent = new
-                Intent(Intent.ACTION_VIEW, Uri.parse("tg://resolve?domain=EscortSupport"));
-        startActivity(browserIntent);
+        try {
+            Intent browserIntent = new
+                    Intent(Intent.ACTION_VIEW, Uri.parse("tg://resolve?domain=EscortSupport"));
+            startActivity(browserIntent);
+        } catch (Exception e){
+            Toast toast = Toast.makeText(Contacts.this, "У вас не установлен месенджер Telegram", Toast.LENGTH_LONG);
+            toast.show();
+        }
     }
 
     public void btnWhatsapp(View view) {
         imgWhatsapp.startAnimation(animScale);
+        try {
+            Intent browserIntent = new
+                    Intent(Intent.ACTION_VIEW, Uri.parse("https://wa.me/79600464665"));
+            startActivity(browserIntent);
+        } catch (Exception e){
+            Toast toast = Toast.makeText(Contacts.this, "У вас не установлен месенджер Whatsapp", Toast.LENGTH_LONG);
+            toast.show();
+        }
 
-        Intent browserIntent = new
-                Intent(Intent.ACTION_VIEW, Uri.parse("https://wa.me/79600464665"));
-        startActivity(browserIntent);
     }
 
     public void btnViber(View view) {
         imgViber.startAnimation(animScale);
-
-        Intent browserIntent = new
-                Intent(Intent.ACTION_VIEW, Uri.parse("viber://chat?number=79600464665"));
-        startActivity(browserIntent);
+        try {
+            Intent browserIntent = new
+                    Intent(Intent.ACTION_VIEW, Uri.parse("viber://chat?number=79600464665"));
+            startActivity(browserIntent);
+        } catch (Exception e){
+            Toast toast = Toast.makeText(Contacts.this, "У вас не установлен месенджер Viber", Toast.LENGTH_LONG);
+            toast.show();
+        }
     }
 
     public void btnSkype(View view) {
         imgSkype.startAnimation(animScale);
-
-        Intent browserIntent = new
-                Intent(Intent.ACTION_VIEW, Uri.parse("skype:escort2b"));
-        startActivity(browserIntent);
+        try {
+            Intent browserIntent = new
+                    Intent(Intent.ACTION_VIEW, Uri.parse("skype:escort2b"));
+            startActivity(browserIntent);
+        } catch (Exception e){
+            Toast toast = Toast.makeText(Contacts.this, "У вас не установлен месенджер Skype", Toast.LENGTH_LONG);
+            toast.show();
+        }
     }
 
     public void btnEmail(View view) {
         imgEmail.startAnimation(animScale);
+        try {
+            Intent browserIntent = new
+                    Intent(Intent.ACTION_SENDTO, Uri.parse("mailto:support@fmeter.ru"));
+            startActivity(browserIntent);
+        } catch (Exception e){
+            Toast toast = Toast.makeText(Contacts.this, "У вас не установлено приложение Почта", Toast.LENGTH_LONG);
+            toast.show();
+        }
 
-        Intent browserIntent = new
-                Intent(Intent.ACTION_SENDTO, Uri.parse("mailto:support@fmeter.ru"));
-        startActivity(browserIntent);
     }
 
     public void btnCallRus(View view) {
@@ -105,10 +129,14 @@ public class Contacts extends AppCompatActivity {
 
     public void btnYotube(View view) {
         imgYoutube.startAnimation(animAlpha);
-
-        Intent browserIntent = new
-                Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/channel/UCpok8amK_3UDigunehNqbRw"));
-        startActivity(browserIntent);
+        try {
+            Intent browserIntent = new
+                    Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/channel/UCpok8amK_3UDigunehNqbRw"));
+            startActivity(browserIntent);
+        } catch (Exception e){
+            Toast toast = Toast.makeText(Contacts.this, "У вас не установлено приложение YouTube", Toast.LENGTH_LONG);
+            toast.show();
+        }
     }
 
     public void btnMap(View view) {
