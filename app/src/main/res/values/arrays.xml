@@ -49,6 +49,7 @@
     </string-array>
 
     <string-array name="videoinstructions_array_ttl">
+        <item>Установка ДУТ Эскорт</item>
         <item>ТД-БЛЕ + УМКА310BR</item>
         <item>ТД-БЛЕ + Queclink</item>
         <item>ТД-БЛЕ + Teltonika FMB125</item>
@@ -75,6 +76,7 @@
     </string-array>
 
     <string-array name="videoinstructions_array_sec_ttl">
+        <item>Полная пошаговая инструкция</item>
         <item>Инструкция по настройке</item>
         <item>Инструкция по настройке</item>
         <item>Инструкция по настройке</item>
@@ -101,6 +103,7 @@
     </string-array>
 
     <string-array name="videoinstructions_content_array">
+        <item>Oo2s0qJNqGs</item>
         <item>sdoMrN4JoEQ</item>
         <item>yvFwkXb5XFU</item>
         <item>pL02UsCCe-U</item>

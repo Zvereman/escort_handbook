@@ -21,11 +21,13 @@ public class VideoView extends AppCompatActivity {
     private ListItemClass listItem;
     private CustomArrayAdapter adapter;
     private ListView listVideoinstructions;
-    private int [] array_video_img = {R.drawable.instruct_td_ble_umka310br, R.drawable.instruct_td_ble_queclink, R.drawable.instruct_img_default, R.drawable.instruct_img_default, R.drawable.instruct_du_ble_rotation_control,
+    private int [] array_video_img = {R.drawable.instruct_img_default, R.drawable.instruct_td_ble_umka310br, R.drawable.instruct_td_ble_queclink, R.drawable.instruct_img_default,
+            R.drawable.instruct_img_default, R.drawable.instruct_du_ble_rotation_control,
              R.drawable.instruct_du_ble_angle_control, R.drawable.instruct_du_ble_shovel, R.drawable.instruct_du_ble_blade, R.drawable.instruct_img_default, R.drawable.instruct_img_default,
-             R.drawable.instruct_img_default, R.drawable.instruct_img_default, R.drawable.instruct_img_default, R.drawable.instruct_img_default, R.drawable.instruct_img_default, R.drawable.instruct_img_default,
-             R.drawable.instruct_img_default, R.drawable.instruct_img_default, R.drawable.instruct_img_default, R.drawable.instruct_kalibr_tarir_dut, R.drawable.instruct_cnt_dut, R.drawable.instruct_dut_tarirovka_analog,
-    R.drawable.instruct_dut_suhaya_kalibrovka};
+             R.drawable.instruct_img_default, R.drawable.instruct_img_default, R.drawable.instruct_img_default, R.drawable.instruct_img_default,
+            R.drawable.instruct_img_default, R.drawable.instruct_img_default,
+             R.drawable.instruct_img_default, R.drawable.instruct_img_default, R.drawable.instruct_img_default, R.drawable.instruct_kalibr_tarir_dut,
+            R.drawable.instruct_cnt_dut, R.drawable.instruct_dut_tarirovka_analog, R.drawable.instruct_dut_suhaya_kalibrovka};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
